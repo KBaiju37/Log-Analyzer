@@ -1,0 +1,2 @@
+[console_scripts]
+autoflow = autoflow.cli:main

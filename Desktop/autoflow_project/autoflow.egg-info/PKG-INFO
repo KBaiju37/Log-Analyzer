@@ -1,0 +1,20 @@
+Metadata-Version: 2.4
+Name: autoflow
+Version: 0.1.0
+Summary: Reliability layer for existing data pipelines: profile, validate, recover, quarantine, audit
+Requires-Python: >=3.9
+Requires-Dist: pandas>=2.1
+Requires-Dist: pyyaml>=6
+Provides-Extra: excel
+Requires-Dist: openpyxl>=3.1; extra == "excel"
+Provides-Extra: parquet
+Requires-Dist: pyarrow>=14; extra == "parquet"
+Provides-Extra: sql
+Requires-Dist: sqlalchemy>=2; extra == "sql"
+Requires-Dist: sqlglot>=25; extra == "sql"
+Provides-Extra: api
+Requires-Dist: fastapi>=0.110; extra == "api"
+Requires-Dist: uvicorn[standard]>=0.27; extra == "api"
+Provides-Extra: test
+Requires-Dist: pytest>=8; extra == "test"
+Requires-Dist: httpx>=0.27; extra == "test"
